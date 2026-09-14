@@ -15,7 +15,6 @@
 
   <link rel="canonical" href="https://narinig-mo-ba.github.io/narinig-mo-ba-game/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Narinig Mo Ba? Online Free – Play in Your Browser">
   <meta property="og:description" content="Play Narinig Mo Ba? online free. Learn the controls, explore the sari-sari store, and discover this Filipino psychological horror game.">
@@ -24,7 +23,6 @@
   <meta property="og:image:alt" content="Narinig Mo Ba? psychological horror game">
   <meta property="og:site_name" content="Narinig Mo Ba? Game Guide">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Narinig Mo Ba? Online Free – Play in Your Browser">
   <meta name="twitter:description" content="Play Narinig Mo Ba? online free and learn the gameplay, controls, story setting, and download options.">
@@ -79,13 +77,11 @@
       margin: 0 auto;
     }
 
-    /* Header */
-
     header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(9,9,11,.8);
+      background: rgba(9,9,11,.82);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--line);
     }
@@ -128,23 +124,21 @@
     }
 
     .nav-links a:hover {
-      color: white;
+      color: #fff;
     }
 
     .nav-play {
       color: white !important;
     }
 
-    /* Hero */
-
     .hero {
-      padding: 90px 0 65px;
+      padding: 82px 0 58px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 50px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 54px;
       align-items: center;
     }
 
@@ -195,7 +189,7 @@
       font-size: 18px;
       font-weight: 900;
       box-shadow: 0 18px 45px rgba(255,61,61,.25);
-      transition: .2s;
+      transition: transform .2s ease, box-shadow .2s ease;
     }
 
     .cta:hover {
@@ -216,21 +210,20 @@
       background: rgba(255,255,255,.03);
     }
 
-    .hero-image {
-      overflow: hidden;
-      border-radius: 28px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-      box-shadow: 0 30px 80px rgba(0,0,0,.4);
+    .hero-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
     }
 
-    .hero-image img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
+    .hero-logo {
+      width: min(100%, 340px);
+      height: auto;
+      object-fit: contain;
+      border-radius: 18px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.28);
     }
-
-    /* Facts */
 
     .facts {
       display: grid;
@@ -255,8 +248,6 @@
       color: var(--muted);
       font-size: 14px;
     }
-
-    /* Sections */
 
     section {
       padding: 65px 0;
@@ -302,15 +293,14 @@
       overflow: hidden;
       border-radius: 24px;
       border: 1px solid var(--line);
+      background: var(--panel);
     }
 
     .game-image img {
       width: 100%;
-      aspect-ratio: 16 / 10;
+      height: auto;
       object-fit: cover;
     }
-
-    /* Gameplay */
 
     .features {
       display: grid;
@@ -321,8 +311,6 @@
     .feature h3 {
       margin-top: 0;
     }
-
-    /* Controls */
 
     table {
       width: 100%;
@@ -348,8 +336,6 @@
       color: var(--muted);
     }
 
-    /* Main CTA */
-
     .big-cta {
       padding: 60px 35px;
       text-align: center;
@@ -370,8 +356,6 @@
       color: var(--muted);
     }
 
-    /* FAQ */
-
     details {
       margin-bottom: 12px;
       padding: 18px 20px;
@@ -389,8 +373,6 @@
       color: var(--muted);
     }
 
-    /* Footer */
-
     footer {
       margin-top: 40px;
       padding: 42px 0 55px;
@@ -403,10 +385,19 @@
       color: white;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
       .hero-grid,
       .two-column {
         grid-template-columns: 1fr;
+      }
+
+      .hero-logo-wrap {
+        min-height: 0;
+        margin-top: 8px;
+      }
+
+      .hero-logo {
+        width: min(100%, 300px);
       }
 
       .features {
@@ -435,10 +426,17 @@
       .secondary {
         width: 100%;
       }
+
+      .hero-logo {
+        width: min(100%, 260px);
+      }
+
+      .big-cta {
+        padding: 38px 22px;
+      }
     }
   </style>
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -533,397 +531,390 @@
   </div>
 </header>
 
-
 <main id="top">
 
-<!-- HERO -->
+  <section class="hero">
+    <div class="container">
 
-<section class="hero">
-  <div class="container">
+      <div class="hero-grid">
 
-    <div class="hero-grid">
+        <div>
 
-      <div>
-
-        <div class="eyebrow">
-          Filipino Psychological Horror · Free Browser Game
-        </div>
-
-        <h1>
-          Play Narinig Mo Ba? Online Free
-        </h1>
-
-        <p class="hero-description">
-          Step inside a neighborhood sari-sari store, serve customers,
-          count Philippine peso change, listen to their conversations,
-          and uncover the disturbing story hidden beneath an ordinary shift.
-        </p>
-
-        <div class="cta-area">
-
-          <a
-            href="https://narinigmoba.fun/"
-            class="cta">
-            ▶ Play Narinig Mo Ba? Now
-          </a>
-
-          <a href="#gameplay" class="secondary">
-            How to Play
-          </a>
-
-        </div>
-
-        <div class="facts">
-
-          <div class="fact">
-            <strong>Format</strong>
-            <span>HTML5 + Desktop</span>
+          <div class="eyebrow">
+            Filipino Psychological Horror · Free Browser Game
           </div>
 
-          <div class="fact">
-            <strong>Genre</strong>
-            <span>Psychological Horror</span>
-          </div>
-
-          <div class="fact">
-            <strong>Setting</strong>
-            <span>Filipino Sari-Sari Store</span>
-          </div>
-
-          <div class="fact">
-            <strong>Experience</strong>
-            <span>Short Story-Driven Game</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="hero-image">
-
-        <img
-          src="Narinig%20Mo%20Ba%201.png"
-          alt="Play Narinig Mo Ba? online Filipino psychological horror game"
-          width="960"
-          height="720">
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>What Is Narinig Mo Ba?</h2>
-
-      <p>
-        Narinig Mo Ba? is a short, story-driven Filipino psychological
-        horror game set inside a neighborhood sari-sari store.
-      </p>
-
-    </div>
-
-
-    <div class="two-column">
-
-      <div class="card">
-
-        <p>
-          You take the role of the store owner and spend your shift
-          serving customers from the neighborhood.
-        </p>
-
-        <p>
-          At first, everything feels ordinary. Customers ask for products,
-          you search the shelves, check prices, accept payments, and return
-          the correct change.
-        </p>
-
-        <p>
-          But the conversations happening across the counter are just as
-          important as the transactions.
-        </p>
-
-        <p>
-          Everyday gossip gradually becomes more meaningful. Names,
-          relationships, debts, rumors, and seemingly harmless comments
-          begin to connect, revealing a darker mystery hidden behind the
-          familiar community.
-        </p>
-
-        <p>
-          Narinig Mo Ba? was originally created for
-          <strong>Game Jam Los Baños 2026</strong> and later received a
-          post-game-jam version with improvements, browser support,
-          and native desktop builds.
-        </p>
-
-      </div>
-
-
-      <div class="game-image">
-
-        <img
-          src="narinig%20mo%20ba8.png"
-          alt="Narinig Mo Ba? sari-sari store gameplay scene"
-          loading="lazy">
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- GAMEPLAY -->
-
-<section id="gameplay">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>How to Play Narinig Mo Ba?</h2>
-
-      <p>
-        The simple sari-sari store routine gives the horror its shape.
-        Read carefully and let the mystery develop naturally.
-      </p>
-
-    </div>
-
-
-    <div class="features">
-
-      <article class="card feature">
-
-        <h3>1. Listen to Customers</h3>
-
-        <p>
-          Read the complete request before selecting a product.
-          The dialogue is an important part of the story.
-        </p>
-
-      </article>
-
-
-      <article class="card feature">
-
-        <h3>2. Find the Product</h3>
-
-        <p>
-          Search the shelves, hanging sachets, refrigerator,
-          and counter areas for the requested item.
-        </p>
-
-      </article>
-
-
-      <article class="card feature">
-
-        <h3>3. Check the Price</h3>
-
-        <p>
-          Confirm the price when needed before returning
-          the product to the counter.
-        </p>
-
-      </article>
-
-
-      <article class="card feature">
-
-        <h3>4. Count the Change</h3>
-
-        <p>
-          Accept the customer's payment and select the correct
-          Philippine peso bills and coins.
-        </p>
-
-      </article>
-
-
-      <article class="card feature">
-
-        <h3>5. Follow the Conversation</h3>
-
-        <p>
-          Pay attention to names, rumors, debts, and recurring topics.
-          Small details can become important later.
-        </p>
-
-      </article>
-
-
-      <article class="card feature">
-
-        <h3>6. Avoid Spoilers</h3>
-
-        <p>
-          Narinig Mo Ba? works best when the mystery develops
-          naturally during your first playthrough.
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CONTROLS -->
-
-<section id="controls">
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Narinig Mo Ba? Controls</h2>
-
-      <p>
-        Narinig Mo Ba? uses simple mouse-first interactions.
-        A desktop or laptop with a mouse is recommended.
-      </p>
-
-    </div>
-
-
-    <table>
-
-      <thead>
-        <tr>
-          <th>Input</th>
-          <th>Action</th>
-          <th>When to Use It</th>
-        </tr>
-      </thead>
-
-      <tbody>
-
-        <tr>
-          <td><strong>Left Click</strong></td>
-          <td>Take or put down an item</td>
-          <td>Move a requested product through the store.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Hold Left Click</strong></td>
-          <td>Return an item</td>
-          <td>Put back a product selected by mistake.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Right Click</strong></td>
-          <td>Check a price</td>
-          <td>Confirm the cost of the item you are holding.</td>
-        </tr>
-
-        <tr>
-          <td><strong>Dialogue Choice</strong></td>
-          <td>Select a response</td>
-          <td>Continue conversations with customers.</td>
-        </tr>
-
-      </tbody>
-
-    </table>
-
-  </div>
-
-</section>
-
-
-<!-- BIG CTA -->
-
-<section>
-
-  <div class="container">
-
-    <div class="big-cta">
-
-      <h2>Ready to Play Narinig Mo Ba?</h2>
-
-      <p>
-        Play Narinig Mo Ba? online in your browser and experience
-        the sari-sari store mystery for yourself. No installation is
-        required for browser play.
-      </p>
-
-      <a
-        href="https://narinigmoba.fun/"
-        class="cta">
-        ▶ Play Narinig Mo Ba? Online Free
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- BROWSER -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-title">
-
-      <h2>Play Narinig Mo Ba? in Your Browser</h2>
-
-      <p>
-        The HTML5 browser version is the fastest way to start playing.
-      </p>
-
-    </div>
-
-
-    <div class="two-column">
-
-      <div class="card">
-
-        <h3>Narinig Mo Ba? Browser Game</h3>
-
-        <p>
-          You can play Narinig Mo Ba? online without downloading
-          and extracting a desktop archive.
-        </p>
-
-        <p>
-          Give the game time to load, click inside the player to
-          restore focus, and use fullscreen if the sari-sari store
-          interface feels too small.
-        </p>
-
-        <p>
-          <strong>
-            <a href="https://narinigmoba.fun/">
-              Play Narinig Mo Ba? Online →
+          <h1>
+            Play Narinig Mo Ba? Online Free
+          </h1>
+
+          <p class="hero-description">
+            Step inside a neighborhood sari-sari store, serve customers,
+            count Philippine peso change, listen to their conversations,
+            and uncover the disturbing story hidden beneath an ordinary shift.
+          </p>
+
+          <div class="cta-area">
+
+            <a
+              href="https://narinigmoba.fun/"
+              class="cta">
+              ▶ Play Narinig Mo Ba? Now
             </a>
-          </strong>
+
+            <a href="#gameplay" class="secondary">
+              How to Play
+            </a>
+
+          </div>
+
+          <div class="facts">
+
+            <div class="fact">
+              <strong>Format</strong>
+              <span>HTML5 + Desktop</span>
+            </div>
+
+            <div class="fact">
+              <strong>Genre</strong>
+              <span>Psychological Horror</span>
+            </div>
+
+            <div class="fact">
+              <strong>Setting</strong>
+              <span>Filipino Sari-Sari Store</span>
+            </div>
+
+            <div class="fact">
+              <strong>Experience</strong>
+              <span>Short Story-Driven Game</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-logo-wrap">
+
+          <img
+            src="Narinig%20Mo%20Ba%20logo.png"
+            alt="Narinig Mo Ba? Filipino psychological horror game logo"
+            class="hero-logo">
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>What Is Narinig Mo Ba?</h2>
+
+        <p>
+          Narinig Mo Ba? is a short, story-driven Filipino psychological
+          horror game set inside a neighborhood sari-sari store.
         </p>
 
       </div>
 
+      <div class="two-column">
+
+        <div class="card">
+
+          <p>
+            You take the role of the store owner and spend your shift
+            serving customers from the neighborhood.
+          </p>
+
+          <p>
+            At first, everything feels ordinary. Customers ask for products,
+            you search the shelves, check prices, accept payments, and return
+            the correct change.
+          </p>
+
+          <p>
+            But the conversations happening across the counter are just as
+            important as the transactions.
+          </p>
+
+          <p>
+            Everyday gossip gradually becomes more meaningful. Names,
+            relationships, debts, rumors, and seemingly harmless comments
+            begin to connect, revealing a darker mystery hidden behind the
+            familiar community.
+          </p>
+
+          <p>
+            Narinig Mo Ba? was originally created for
+            <strong>Game Jam Los Baños 2026</strong> and later received a
+            post-game-jam version with improvements, browser support,
+            and native desktop builds.
+          </p>
+
+        </div>
+
+        <div class="game-image">
+
+          <img
+            src="Narinig%20Mo%20Ba%201.png"
+            alt="Narinig Mo Ba? online psychological horror game scene"
+            loading="lazy">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="gameplay">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>How to Play Narinig Mo Ba?</h2>
+
+        <p>
+          The simple sari-sari store routine gives the horror its shape.
+          Read carefully and let the mystery develop naturally.
+        </p>
+
+      </div>
+
+      <div class="features">
+
+        <article class="card feature">
+
+          <h3>1. Listen to Customers</h3>
+
+          <p>
+            Read the complete request before selecting a product.
+            The dialogue is an important part of the story.
+          </p>
+
+        </article>
+
+        <article class="card feature">
+
+          <h3>2. Find the Product</h3>
+
+          <p>
+            Search the shelves, hanging sachets, refrigerator,
+            and counter areas for the requested item.
+          </p>
+
+        </article>
+
+        <article class="card feature">
+
+          <h3>3. Check the Price</h3>
+
+          <p>
+            Confirm the price when needed before returning
+            the product to the counter.
+          </p>
+
+        </article>
+
+        <article class="card feature">
+
+          <h3>4. Count the Change</h3>
+
+          <p>
+            Accept the customer's payment and select the correct
+            Philippine peso bills and coins.
+          </p>
+
+        </article>
+
+        <article class="card feature">
+
+          <h3>5. Follow the Conversation</h3>
+
+          <p>
+            Pay attention to names, rumors, debts, and recurring topics.
+            Small details can become important later.
+          </p>
+
+        </article>
+
+        <article class="card feature">
+
+          <h3>6. Avoid Spoilers</h3>
+
+          <p>
+            Narinig Mo Ba? works best when the mystery develops
+            naturally during your first playthrough.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="controls">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Narinig Mo Ba? Controls</h2>
+
+        <p>
+          Narinig Mo Ba? uses simple mouse-first interactions.
+          A desktop or laptop with a mouse is recommended.
+        </p>
+
+      </div>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Input</th>
+            <th>Action</th>
+            <th>When to Use It</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td><strong>Left Click</strong></td>
+            <td>Take or put down an item</td>
+            <td>Move a requested product through the store.</td>
+          </tr>
+
+          <tr>
+            <td><strong>Hold Left Click</strong></td>
+            <td>Return an item</td>
+            <td>Put back a product selected by mistake.</td>
+          </tr>
+
+          <tr>
+            <td><strong>Right Click</strong></td>
+            <td>Check a price</td>
+            <td>Confirm the cost of the item you are holding.</td>
+          </tr>
+
+          <tr>
+            <td><strong>Dialogue Choice</strong></td>
+            <td>Select a response</td>
+            <td>Continue conversations with customers.</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="container">
+
+      <div class="big-cta">
+
+        <h2>Ready to Play Narinig Mo Ba?</h2>
+
+        <p>
+          Play Narinig Mo Ba? online in your browser and experience
+          the sari-sari store mystery for yourself. No installation is
+          required for browser play.
+        </p>
+
+        <a
+          href="https://narinigmoba.fun/"
+          class="cta">
+          ▶ Play Narinig Mo Ba? Online Free
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Play Narinig Mo Ba? in Your Browser</h2>
+
+        <p>
+          The HTML5 browser version is the fastest way to start playing.
+        </p>
+
+      </div>
+
+      <div class="two-column">
+
+        <div class="card">
+
+          <h3>Narinig Mo Ba? Browser Game</h3>
+
+          <p>
+            You can play Narinig Mo Ba? online without downloading
+            and extracting a desktop archive.
+          </p>
+
+          <p>
+            Give the game time to load, click inside the player to
+            restore focus, and use fullscreen if the sari-sari store
+            interface feels too small.
+          </p>
+
+          <p>
+            <strong>
+              <a href="https://narinigmoba.fun/">
+                Play Narinig Mo Ba? Online →
+              </a>
+            </strong>
+          </p>
+
+        </div>
+
+        <div class="game-image">
+
+          <img
+            src="narinig%20mo%20ba8.png"
+            alt="Narinig Mo Ba? browser game gameplay screenshot"
+            loading="lazy">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Narinig Mo Ba? Desktop Builds</h2>
+
+      </div>
 
       <div class="card">
-
-        <h3>Narinig Mo Ba? Desktop Builds</h3>
 
         <p>
           Native desktop builds may be available for Windows and Linux,
@@ -940,169 +931,151 @@
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section>
 
+    <div class="container">
 
-<!-- STORY -->
+      <div class="section-title">
 
-<section>
+        <h2>A Cozy Sari-Sari Store With a Darker Story</h2>
 
-  <div class="container">
+      </div>
 
-    <div class="section-title">
+      <div class="card">
 
-      <h2>A Cozy Sari-Sari Store With a Darker Story</h2>
+        <p>
+          A sari-sari store is a familiar neighborhood shop in the
+          Philippines—a place for everyday products, quick errands,
+          and casual conversation.
+        </p>
 
-    </div>
+        <p>
+          Narinig Mo Ba? uses that familiar setting to build psychological
+          horror. Customers arrive, products change hands, people gossip,
+          and the store initially feels like an ordinary part of the community.
+        </p>
 
+        <p>
+          As the shift continues, those same conversations begin to carry
+          a different weight. Familiar stories start sounding like warnings,
+          and the ordinary sari-sari store becomes the place where a much
+          darker mystery comes into focus.
+        </p>
 
-    <div class="card">
-
-      <p>
-        A sari-sari store is a familiar neighborhood shop in the
-        Philippines—a place for everyday products, quick errands,
-        and casual conversation.
-      </p>
-
-      <p>
-        Narinig Mo Ba? uses that familiar setting to build psychological
-        horror. Customers arrive, products change hands, people gossip,
-        and the store initially feels like an ordinary part of the community.
-      </p>
-
-      <p>
-        As the shift continues, those same conversations begin to carry
-        a different weight. Familiar stories start sounding like warnings,
-        and the ordinary sari-sari store becomes the place where a much
-        darker mystery comes into focus.
-      </p>
+      </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section id="faq">
 
+    <div class="container">
 
-<!-- FAQ -->
+      <div class="section-title">
 
-<section id="faq">
+        <h2>Narinig Mo Ba? FAQ</h2>
 
-  <div class="container">
+        <p>
+          Quick answers about Narinig Mo Ba? online play,
+          controls, downloads, and platforms.
+        </p>
 
-    <div class="section-title">
+      </div>
 
-      <h2>Narinig Mo Ba? FAQ</h2>
+      <details>
 
-      <p>
-        Quick answers about Narinig Mo Ba? online play,
-        controls, downloads, and platforms.
-      </p>
+        <summary>What is Narinig Mo Ba?</summary>
 
-    </div>
+        <p>
+          Narinig Mo Ba? is a short, story-driven Filipino psychological
+          horror game set inside a neighborhood sari-sari store.
+        </p>
 
+      </details>
 
-    <details>
+      <details>
 
-      <summary>What is Narinig Mo Ba?</summary>
+        <summary>Can I play Narinig Mo Ba? online for free?</summary>
 
-      <p>
-        Narinig Mo Ba? is a short, story-driven Filipino psychological
-        horror game set inside a neighborhood sari-sari store.
-      </p>
+        <p>
+          Yes. You can play an HTML5 browser version of Narinig Mo Ba?
+          online at
+          <a href="https://narinigmoba.fun/">
+            narinigmoba.fun
+          </a>.
+        </p>
 
-    </details>
+      </details>
 
+      <details>
 
-    <details>
+        <summary>What are the controls for Narinig Mo Ba?</summary>
 
-      <summary>Can I play Narinig Mo Ba? online for free?</summary>
+        <p>
+          Left click takes or puts down an item, holding left click
+          returns an item, right click checks the price, and dialogue
+          choices continue conversations.
+        </p>
 
-      <p>
-        Yes. You can play an HTML5 browser version of Narinig Mo Ba?
-        online at
-        <a href="https://narinigmoba.fun/">
-          narinigmoba.fun
-        </a>.
-      </p>
+      </details>
 
-    </details>
+      <details>
 
+        <summary>Where can I download Narinig Mo Ba?</summary>
 
-    <details>
+        <p>
+          Desktop builds are distributed through the creators' official
+          release source. Check the official page for the latest Windows
+          and Linux files.
+        </p>
 
-      <summary>What are the controls for Narinig Mo Ba?</summary>
+      </details>
 
-      <p>
-        Left click takes or puts down an item, holding left click
-        returns an item, right click checks the price, and dialogue
-        choices continue conversations.
-      </p>
+      <details>
 
-    </details>
+        <summary>Is Narinig Mo Ba? available on Android or iPhone?</summary>
 
+        <p>
+          There is currently no official native Android APK or iOS package
+          listed in this guide. Desktop browser play is recommended for the
+          HTML5 version.
+        </p>
 
-    <details>
-
-      <summary>Where can I download Narinig Mo Ba?</summary>
-
-      <p>
-        Desktop builds are distributed through the creators' official
-        release source. Check the official page for the latest Windows
-        and Linux files.
-      </p>
-
-    </details>
-
-
-    <details>
-
-      <summary>Is Narinig Mo Ba? available on Android or iPhone?</summary>
-
-      <p>
-        There is currently no official native Android APK or iOS package
-        listed in this guide. Desktop browser play is recommended for the
-        HTML5 version.
-      </p>
-
-    </details>
-
-  </div>
-
-</section>
-
-
-<!-- FINAL CTA -->
-
-<section>
-
-  <div class="container">
-
-    <div class="big-cta">
-
-      <h2>Play Narinig Mo Ba? Online</h2>
-
-      <p>
-        Serve the customers, listen to the neighborhood,
-        and discover what is really happening behind the counter.
-      </p>
-
-      <a
-        href="https://narinigmoba.fun/"
-        class="cta">
-        Play Narinig Mo Ba? Now ↗
-      </a>
+      </details>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section>
+
+    <div class="container">
+
+      <div class="big-cta">
+
+        <h2>Play Narinig Mo Ba? Online</h2>
+
+        <p>
+          Serve the customers, listen to the neighborhood,
+          and discover what is really happening behind the counter.
+        </p>
+
+        <a
+          href="https://narinigmoba.fun/"
+          class="cta">
+          Play Narinig Mo Ba? Now ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
-
 
 <footer>
 
